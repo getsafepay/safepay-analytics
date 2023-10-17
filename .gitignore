@@ -1,7 +1,7 @@
 # dependency management
 package-lock.json
 /node_modules
-/dist
+dist
 
 # misc
 .DS_Store
