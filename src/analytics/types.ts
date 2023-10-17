@@ -1,3 +1,23 @@
+export enum Provider {
+  GA = "GA",
+  Amplitude = "AMPLITUDE",
+}
+
+export interface GaOptions {
+  trackingId: string;
+}
+
+export interface AmplitudeOptions {
+  apiKey: string;
+  tokenEndPoint: string;
+}
+
+export type Options = {
+  provider: Provider;
+  ga: GaOptions;
+  amplitude: AmplitudeOptions;
+};
+
 export interface TraceEventProps {
   category: string;
   action: string;
@@ -53,6 +73,6 @@ export enum Title {
   Login = "LOGIN",
 }
 
-export type ShouldLogImpression = {
+export interface ShouldLogImpression {
   shouldLogImpression: boolean;
-};
+}

@@ -1,7 +1,7 @@
 import { ShouldLogImpression, TraceEventProps } from "./types";
 import ReactGA from "react-ga4";
 
-export function logAnalytics(
+export function logEvent(
   props: TraceEventProps & ShouldLogImpression
 ) {
   if (props.shouldLogImpression) {
