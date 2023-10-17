@@ -2,18 +2,25 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-ga4": "^2.1.0"
+    "react-ga4": "^2.1.0",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.28",
     "@types/react-dom": "^18.2.13"
   },
   "name": "safepay-analytics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a Safepay package to log analytics.",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "npm run test"
+    "build": "rm -rf dist; tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
