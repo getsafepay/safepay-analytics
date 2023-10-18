@@ -12,8 +12,12 @@ export function initialize(options: Options) {
   }
 }
 
-function initalizeGA(options: GaOptions) {
-  ReactGA.initialize(options.trackingId);
+function initalizeGA(options: GaOptions | undefined) {
+  if (options?.trackingId) {
+    ReactGA.initialize(options.trackingId);
+  } else {
+    throw new Error("Missing required parameters");
+  }
 }
 
-function initalizeAmplitude(options: AmplitudeOptions) {}
+function initalizeAmplitude(options: AmplitudeOptions | undefined) {}

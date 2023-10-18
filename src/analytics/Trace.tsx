@@ -2,7 +2,7 @@ import { TraceProps } from "./types";
 import React, { PropsWithChildren, useEffect } from "react";
 import ReactGA from "react-ga4";
 
-export default function Trace({
+export function Trace({
   page,
   title,
   children,

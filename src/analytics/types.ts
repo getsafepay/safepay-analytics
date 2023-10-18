@@ -14,8 +14,8 @@ export interface AmplitudeOptions {
 
 export type Options = {
   provider: Provider;
-  ga: GaOptions;
-  amplitude: AmplitudeOptions;
+  ga?: GaOptions;
+  amplitude?: AmplitudeOptions;
 };
 
 export interface TraceEventProps {
