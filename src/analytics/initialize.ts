@@ -5,8 +5,10 @@ export function initialize(options: Options) {
   switch (options.provider) {
     case "GA":
       initalizeGA(options.ga);
+      break;
     case "AMPLITUDE":
       initalizeAmplitude(options.amplitude);
+      break;
     default:
       throw new Error("This option is unsupported");
   }
