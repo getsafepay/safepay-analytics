@@ -29,12 +29,7 @@ Note that an `Error` is thrown if an invalid provider is provided.
 ### Logging Events Directly
 
 ```js
-import {
-  logEvent,
-  Category,
-  Action,
-  Events,
-} from "safepay-analytics";
+import { logEvent, Category, Action, Events } from "safepay-analytics";
 
 logEvent({
   category: Category.Authorization,
@@ -88,6 +83,7 @@ OpenDropDown = "OPEN_DROP_DOWN",
 OpenExternalLink = "OPEN_EXTERNAL_LINK",
 OpenInternalLink = "OPEN_INTERNAL_LINK",
 SavingCardProcess = "SAVING_CARD_PROCESS",
+MerchantDashboardActions = "MERCHANT_DASHBOARD_ACTIONS",
 ```
 
 ##### Values for Action
@@ -101,6 +97,9 @@ OpenMenu = "OPEN_MENU",
 ClickCancelUrl = "CLICK_CANCEL_URL",
 ProceedAfterCardSelection = "PROCEED_AFTER_CARD_SELECTION",
 CardSaved = "CARD_SAVED",
+CreateDiscountClick = "CREATE_DISCOUNT_CLICK",
+CreateQuicklinkClick = "CREATE_QUICKLINK_CLICK",
+ApplyFinanceClick = "APPLY_FINANCE_CLICK",
 ```
 
 ##### Values for Events
@@ -116,10 +115,7 @@ This is a built in React component that logs an event when it is first mounted. 
 ```js
 import { Trace, Title } from "safepay-analytics";
 
-<Trace
-  page={window.location.pathname}
-  title={Title.SubscriptionProfile}
->
+<Trace page={window.location.pathname} title={Title.SubscriptionProfile}>
   <SomeComponent />
 </Trace>;
 ```
@@ -146,4 +142,14 @@ ForgotPassword = "FORGOT_PASSWORD",
 ResetPassword = "RESET_PASSWORD",
 SignUp = "SIGN_UP",
 Login = "LOGIN",
+
+// Merchant Dashboard pages
+DiscountHome = "DISCOUNT_HOME",
+MerchantDashboardHome = "MERCHANT_DASHBOARD_HOME",
+QuicklinkHome = "QUICKLINK_HOME",
+PaymentDetails = "PAYMENT_DETAILS",
+PaymentDetailsV2 = "PAYEMNT_DETAILS_2.0",
+PaymentList = "PAYMENT_LIST",
+PaymentV2List = "PAYEMNT_LIST_V2",
+
 ```
