@@ -43,7 +43,7 @@ export enum Category {
   OpenExternalLink = "OPEN_EXTERNAL_LINK",
   OpenInternalLink = "OPEN_INTERNAL_LINK",
   SavingCardProcess = "SAVING_CARD_PROCESS",
-  MerchantDashboardActions = "MERCHANT_DASHBOARD_ACTIONS",
+  UserActions = "USER_ACTIONS",
 }
 
 export enum Action {
