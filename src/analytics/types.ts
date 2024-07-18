@@ -58,6 +58,13 @@ export enum Action {
   CreateDiscountClick = "CREATE_DISCOUNT_CLICK",
   CreateQuicklinkClick = "CREATE_QUICKLINK_CLICK",
   ApplyFinanceClick = "APPLY_FINANCE_CLICK",
+
+  // Checkout 2.0
+  EmailInput = "EMAIL_INPUT",
+  PhoneInput = "PHONE_INPUT",
+  LoginPasswordInput = "LOGIN_PASSWORD_INPUT",
+  SignUpPasswordInput = "SIGNUP_PASSWORD_INPUT",
+  EmailOtpInput = "EMAIL_OTP_INPUT",
 }
 
 export enum Title {
