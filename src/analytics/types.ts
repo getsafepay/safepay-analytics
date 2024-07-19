@@ -18,6 +18,11 @@ export type Options = {
   amplitude?: AmplitudeOptions;
 };
 
+enum TransportType {
+  Beacon = "beacon",
+  XHR = "xhr",
+  Image = "image",
+}
 export interface TraceEventProps {
   category: string;
   action: string;
@@ -25,7 +30,7 @@ export interface TraceEventProps {
   label?: string;
   value?: number;
   nonInteraction?: boolean;
-  transport?: "beacon" | "xhr" | "image" | undefined;
+  transport?: TransportType;
 }
 
 export interface TraceProps {
@@ -65,6 +70,12 @@ export enum Action {
   LoginPasswordInput = "LOGIN_PASSWORD_INPUT",
   SignUpPasswordInput = "SIGNUP_PASSWORD_INPUT",
   EmailOtpInput = "EMAIL_OTP_INPUT",
+  SmsOtpInput = "SMS_OTP_INPUT",
+  EmailOtpRequest = "EMAIL_OTP_REQUEST",
+  SmsOtpRequest = "SMS_OTP_REQUEST",
+  CardDetailsInput = "CARD_DETAILS_INPUT",
+  BillingDetailsInput = "BILLING_DETAILS_INPUT",
+  SignUpClick = "SIGNUP_CLICK",
 }
 
 export enum Title {
