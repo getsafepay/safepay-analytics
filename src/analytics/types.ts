@@ -67,17 +67,18 @@ export enum Action {
   ApplyFinanceClick = "APPLY_FINANCE_CLICK",
 
   // Checkout 2.0
-  EmailInput = "EMAIL_INPUT",
-  PhoneInput = "PHONE_INPUT",
-  LoginPasswordInput = "LOGIN_PASSWORD_INPUT",
-  SignUpPasswordInput = "SIGNUP_PASSWORD_INPUT",
-  EmailOtpInput = "EMAIL_OTP_INPUT",
-  SmsOtpInput = "SMS_OTP_INPUT",
+  EmailValidInput = "EMAIL_VALID_INPUT",
+  PhoneInput = "PHONE_VALID_INPUT",
+  ValidLoginPasswordInput = "VALID_LOGIN_PASSWORD_INPUT",
+  ValidSignUpPasswordInput = "VALID_SIGNUP_PASSWORD_INPUT",
+  ValidEmailOtpInput = "VALID_EMAIL_OTP_INPUT",
+  ValidSmsOtpInput = "VALID_SMS_OTP_INPUT",
   EmailOtpRequest = "EMAIL_OTP_REQUEST",
   SmsOtpRequest = "SMS_OTP_REQUEST",
-  CardDetailsInput = "CARD_DETAILS_INPUT",
-  BillingDetailsInput = "BILLING_DETAILS_INPUT",
+  ValidCardDetailsInput = "VALID_CARD_DETAILS_INPUT",
+  ValidBillingDetailsInput = "VALID_BILLING_DETAILS_INPUT",
   SignUpClick = "SIGNUP_CLICK",
+  CancelButtonClick = "CANCEL_BUTTON_CLICK",
 }
 
 export enum Title {
