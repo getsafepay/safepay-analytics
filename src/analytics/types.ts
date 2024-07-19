@@ -40,6 +40,8 @@ export interface TraceProps {
 
 export enum Events {
   OnClick = "onClick",
+  IsValid = "isValid",
+  OnChange = "onChange",
 }
 
 export enum Category {
