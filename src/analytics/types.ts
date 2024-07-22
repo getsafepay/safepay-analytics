@@ -18,6 +18,11 @@ export type Options = {
   amplitude?: AmplitudeOptions;
 };
 
+enum TransportType {
+  Beacon = "beacon",
+  XHR = "xhr",
+  Image = "image",
+}
 export interface TraceEventProps {
   category: string;
   action: string;
@@ -25,7 +30,7 @@ export interface TraceEventProps {
   label?: string;
   value?: number;
   nonInteraction?: boolean;
-  transport?: "beacon" | "xhr" | "image" | undefined;
+  transport?: TransportType;
 }
 
 export interface TraceProps {
@@ -35,6 +40,8 @@ export interface TraceProps {
 
 export enum Events {
   OnClick = "onClick",
+  IsValid = "isValid",
+  OnChange = "onChange",
 }
 
 export enum Category {
@@ -58,6 +65,20 @@ export enum Action {
   CreateDiscountClick = "CREATE_DISCOUNT_CLICK",
   CreateQuicklinkClick = "CREATE_QUICKLINK_CLICK",
   ApplyFinanceClick = "APPLY_FINANCE_CLICK",
+
+  // Checkout 2.0
+  EmailValidInput = "EMAIL_VALID_INPUT",
+  PhoneInput = "PHONE_VALID_INPUT",
+  ValidLoginPasswordInput = "VALID_LOGIN_PASSWORD_INPUT",
+  ValidSignUpPasswordInput = "VALID_SIGNUP_PASSWORD_INPUT",
+  ValidEmailOtpInput = "VALID_EMAIL_OTP_INPUT",
+  ValidSmsOtpInput = "VALID_SMS_OTP_INPUT",
+  EmailOtpRequest = "EMAIL_OTP_REQUEST",
+  SmsOtpRequest = "SMS_OTP_REQUEST",
+  ValidCardDetailsInput = "VALID_CARD_DETAILS_INPUT",
+  ValidBillingDetailsInput = "VALID_BILLING_DETAILS_INPUT",
+  SignUpClick = "SIGNUP_CLICK",
+  CancelButtonClick = "CANCEL_BUTTON_CLICK",
 }
 
 export enum Title {
