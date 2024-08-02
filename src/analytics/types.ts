@@ -51,6 +51,7 @@ export enum Category {
   OpenInternalLink = "OPEN_INTERNAL_LINK",
   SavingCardProcess = "SAVING_CARD_PROCESS",
   UserActions = "USER_ACTIONS",
+  Payment = "PAYMENT",
 }
 
 export enum Action {
@@ -76,8 +77,12 @@ export enum Action {
   EmailOtpRequest = "EMAIL_OTP_REQUEST",
   SmsOtpRequest = "SMS_OTP_REQUEST",
   ValidCardDetailsInput = "VALID_CARD_DETAILS_INPUT",
+  ValidCardDetailsInputInstrument = "VALID_CARD_DETAILS_INPUT_INSTRUMENT",
   ValidBillingDetailsInput = "VALID_BILLING_DETAILS_INPUT",
   SignUpClick = "SIGNUP_CLICK",
+  PayButtonClick = "PAY_BUTTON_CLICK",
+  SelectedSavedCard = "SELECTED_SAVED_CARD",
+  AddAnotherPaymentMethod = "ADD_ANOTHER_PAYMENT_METHOD",
   CancelButtonClick = "CANCEL_BUTTON_CLICK",
 }
 
